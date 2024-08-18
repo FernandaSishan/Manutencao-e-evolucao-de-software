@@ -72,7 +72,7 @@ const updateUser = async (
 
 const searchUser = async (name: string): Promise<UserResponseAPI[]> => {
   try {
-    const response = await api.get(`/user/search/${name}`);
+    const response = await api.get(`/user/nome/${name}`);
     return response.data;
   } catch (err) {
     throw err;
